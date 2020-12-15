@@ -1,0 +1,395 @@
+.block {
+  max-width: 1302px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.video {
+  max-width: 868px;
+  height: 488px;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.info {
+  background: rgba(255, 255, 255, 0.6);
+  max-width: 434px;
+  height: 488px;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  position: relative;
+}
+
+.home {
+  position: relative;
+  z-index: 10;
+}
+
+.homeBorder {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 30px;
+  position: absolute;
+  z-index: -1;
+  box-shadow: inset 0 0 0 12px #1D327C;
+  top: -30px;
+  left: -30px;
+}
+
+.snowflake1 {
+  width: 243px;
+  height: auto;
+  position: absolute;
+  top: -126px;
+  left: -179px;
+  z-index: 9;
+}
+
+.snowflake2 {
+  width: 179px;
+  height: auto;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 144px;
+  right: -173px;
+  z-index: 9;
+}
+
+.snowflake3 {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  bottom: 14px;
+  right: -84px;
+  z-index: 9;
+}
+
+.circle1 {
+  width: 340px;
+  height: auto;
+  position: absolute;
+  top: -146px;
+  right: -331px;
+  z-index: 9;
+}
+
+.circle2 {
+  width: 200px;
+  height: auto;
+  transform: rotate(115deg);
+  position: absolute;
+  top: 314px;
+  left: -160px;
+  z-index: 9;
+}
+
+.text1 {
+  max-width: 290px;
+  margin: 35px auto 15px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #6D6D6D;
+}
+
+.text1 span {
+  font-weight: 700;
+  color: #1D327C;
+}
+
+.text2 {
+  max-width: 290px;
+  margin: 0 auto 30px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #6D6D6D;
+}
+
+.text3 {
+  max-width: 290px;
+  margin: 0 auto 16px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1D327C;
+}
+
+.text3 span {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.year {
+  width: 116px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.timerBlock {
+  background: #E15A27;
+  padding: 26px 33px 37px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.timer {
+  width: 80px;
+  height: 72px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  color: #FFFFFF;
+}
+
+#days, #hours, #minutes, #seconds {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+}
+
+.timer span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.hr {
+  width: 1px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 26px;
+}
+
+@media only screen and (max-device-width: 1365px) {
+  .video {
+    width: 66.66%;
+  }
+
+  .info {
+    width: 33.33%;
+  }
+
+  .block {
+    width: 95%;
+  }
+
+  .homeBorder {
+    padding: 0 25px;
+    top: -25px;
+    left: -25px;
+  }
+
+  .text1 {
+    font-size: 18px;
+  }
+
+  .text3 {
+    font-size: 24px;
+  }
+
+  .text3 span {
+    font-size: 30px;
+  }
+
+  .timer {
+    width: 50px;
+  }
+
+  #days, #hours, #minutes, #seconds {
+    font-size: 36px;
+  }
+
+  .timer span {
+    font-size: 14px;
+  }
+
+  .timerBlock {
+    padding: 26px 23px 37px;
+  }
+}
+
+@media only screen and (max-device-width: 868px) {
+  .video, .info {
+    max-width: 664px;
+    width: 95%;
+    height: 373px;
+    margin: 0 auto;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+  }
+
+  .timerBlock {
+    position: relative;
+    left: auto;
+    right: auto;
+    flex-direction: column;
+    padding: 16px 20px;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .hr {
+    width: 38px;
+    height: 1px;
+    margin: 0 auto;
+  }
+
+  .textBlock {
+    width: calc(100% - 120px);
+  }
+
+  .text1 {
+    font-size: 20px;
+  }
+
+  .text3 span {
+    font-size: 32px;
+  }
+
+  .timer {
+    width: 80px;
+  }
+
+  #days, #hours, #minutes, #seconds {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .timer span {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .homeBorder {
+    padding: 0px;
+    top: -30px;
+    left: 0;
+  }
+
+  .circle2 {
+    width: 200px;
+    height: auto;
+    transform: rotate(115deg);
+    position: absolute;
+    top: auto;
+    bottom: -38px;
+    left: -135px;
+    z-index: 9;
+  }
+
+  .circle1 {
+    right: -296px;
+  }
+
+  .snowflake2 {
+    right: -143px;
+  }
+
+  .snowflake3 {
+    right: -54px;
+  }
+}
+
+@media only screen and (max-device-width: 668px) {
+  body {
+    align-items: flex-start;
+  }
+
+  .block {
+    margin-top: 44px;
+    margin-bottom: 100px;
+  }
+
+  .video, .info {
+    width: 86%;
+  }
+
+  .video {
+    height: auto;
+  }
+
+  .info {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .textBlock {
+    width: 100%;
+  }
+
+  .timerBlock {
+    flex-direction: row;
+    padding: 10px 10px 12px;
+    width: 100%;
+  }
+
+  .text1 {
+    margin: 24px 16px 12px;
+    font-size: 18px;
+  }
+
+  .text2 {
+    font-size: 14px;
+    margin: 0 auto 24px;
+  }
+
+  .text3 {
+    font-size: 22px;
+  }
+
+  .text3 span {
+    font-size: 30px;
+  }
+
+  .year {
+    margin: 0 auto 30px;
+  }
+
+  .homeBorder {
+    top: -20px;
+  }
+
+  .hr {
+    width: 1px;
+    height: 32px;
+    margin-top: 15px;
+  }
+
+  #days, #hours, #minutes, #seconds {
+    font-size: 32px;
+  }
+
+  .timer span {
+    font-size: 14px;
+  }
+
+  .timer {
+    width: 48px;
+  }
+}

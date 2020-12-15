@@ -1,0 +1,110 @@
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+input, textarea, select {
+  outline: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+:root {}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, img, small, strike, strong, b, i, ol, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+li, form, label, table, tbody, tfoot, thead, tr, th, td, canvas, footer, header, menu, nav, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0;
+  background: #080E24;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  width: auto;
+  background: #75A5D5 url(./images/background.png) no-repeat center center / cover;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.block {
+  position: relative;
+}
+
+.logo {
+  width: 222px;
+  height: auto;
+  position: absolute;
+  display: block;
+  right: 30px;
+  bottom: 30px;
+  z-index: 12;
+}
+
+@media only screen and (max-device-width: 1440px) {}
+
+@media only screen and (max-device-width: 1290px) {}
+
+@media only screen and (max-device-width: 1024px) {}
+
+@media only screen and (max-device-width: 868px) {
+  .logo {
+    width: 166px;
+    right: 22px;
+    bottom: 22px;
+  }
+}
+
+@media only screen and (max-device-width: 725px) {}
+
+@media only screen and (max-device-width: 668px) {
+  .logo {
+    width: 132px;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: 0 auto;
+  }
+}

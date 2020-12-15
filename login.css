@@ -1,0 +1,175 @@
+.block {
+  margin-left: 30px;
+  margin-top: 30px;
+  max-width: 464px;
+  width: 100%;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 0 0 12px #E15A27;
+  box-sizing: border-box;
+  padding: 194px 60px;
+  max-width: 464px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.formDecorationBlock {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.formBorder {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  box-shadow: inset 0 0 0 12px #1D327C;
+  box-sizing: border-box;
+  top: -24px;
+  left: -30px;
+}
+
+.inputText {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 18px 20px;
+  background: #FFFFFF;
+  border: 2px solid #75A5D5;
+  box-sizing: border-box;
+  max-width: 344px;
+  width: 100%;
+}
+
+.inputText::placeholder {
+  color: #999999;
+}
+
+.submit {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 18px 20px;
+  margin-top: 20px;
+  background: #1D327C;
+  max-width: 344px;
+  width: 100%;
+}
+
+.car {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: -60px;
+  left: -36px;
+  z-index: 11;
+}
+
+.plane {
+  width: 314px;
+  height: auto;
+  position: absolute;
+  bottom: -80px;
+  right: -88px;
+  z-index: 11;
+}
+
+.snowflake1 {
+  width: 243px;
+  height: auto;
+  position: absolute;
+  top: -120px;
+  left: -179px;
+  z-index: 9;
+}
+
+.snowflake2 {
+  width: 179px;
+  height: auto;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 210px;
+  right: -113px;
+  z-index: 9;
+}
+
+.snowflake3 {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  bottom: 40px;
+  right: -24px;
+  z-index: 9;
+}
+
+.circle1 {
+  width: 340px;
+  height: auto;
+  position: absolute;
+  top: -140px;
+  right: -271px;
+  z-index: 9;
+}
+
+.circle2 {
+  width: 200px;
+  height: auto;
+  transform: rotate(115deg);
+  position: absolute;
+  top: 240px;
+  left: -160px;
+  z-index: 9;
+}
+
+@media only screen and (max-device-width: 668px) {
+  .form, .formBorder, .block {
+    max-width: 280px;
+  }
+
+  .form {
+    padding: 144px 40px;
+  }
+
+  .formBorder {
+    top: -20px;
+    left: -20px;
+  }
+
+  .block {
+    margin-left: 20px;
+    margin-top: 32px;
+  }
+
+  body {
+    align-items: flex-start;
+  }
+
+  .plane {
+    width: 259px;
+  }
+
+  .car {
+    width: 156px;
+  }
+
+  .circle2 {
+    top: 144px;
+    left: -150px;
+  }
+
+  .snowflake2 {
+    bottom: 106px;
+  }
+}

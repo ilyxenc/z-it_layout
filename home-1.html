@@ -21,6 +21,7 @@
 
 <body>
 
+
   <div class="block">
     <div class="home">
       <div class="video">
@@ -44,28 +45,52 @@
         </div>
         <div class="timerBlock">
           <div class="timer">
-            <p id="days">02</p>
+            <p id="days"></p>
             <span>дней</span>
           </div>
           <div class="hr"></div>
           <div class="timer">
-            <p id="hours">11</p>
+            <p id="hours"></p>
             <span>часов</span>
           </div>
           <div class="hr"></div>
           <div class="timer">
-            <p id="minutes">45</p>
+            <p id="minutes"></p>
             <span>минут</span>
           </div>
           <div class="hr"></div>
           <div class="timer">
-            <p id="seconds">07</p>
+            <p id="seconds"></p>
             <span>секунд</span>
           </div>
+
+          <script type="text/javascript">
+            let countDownDate = new Date("Dec 23, 2020 17:00:00").getTime();
+            let daysBlock = document.querySelector("#days");
+            let hoursBlock = document.querySelector("#hours");
+            let minutesBlock = document.querySelector("#minutes");
+            let secondsBlock = document.querySelector("#seconds");
+
+            let x = setInterval(()=>{
+              let now = new Date().getTime();
+              let distance = countDownDate - now;
+
+              let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+              secondsBlock.innerHTML = (seconds < 10) ? '0' + seconds : seconds;
+              minutesBlock.innerHTML = (minutes < 10) ? '0' + minutes : minutes;
+              hoursBlock.innerHTML = (hours < 10) ? '0' + hours : hours;
+              daysBlock.innerHTML = (days < 10) ? '0' + days : days;
+
+            }, 1000);
+          </script>
         </div>
       </div>
     </div>
-    <div class=homeDecorationBlock">
+    <div class="homeDecorationBlock">
       <div class="homeBorder"></div>
       <img class="snowflake1" src="./images/snowflake.png" alt="" />
       <img class="snowflake2" src="./images/snowflake.png" alt="" />

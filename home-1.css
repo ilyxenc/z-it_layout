@@ -186,7 +186,14 @@
   margin-top: 26px;
 }
 
-@media only screen and (max-device-width: 1365px) {
+.textBlockHome2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1365px) {
   .video {
     width: 66.66%;
   }
@@ -234,7 +241,7 @@
   }
 }
 
-@media only screen and (max-device-width: 868px) {
+@media only screen and (max-width: 868px) {
   .video, .info {
     max-width: 664px;
     width: 95%;
@@ -267,6 +274,10 @@
 
   .textBlock {
     width: calc(100% - 120px);
+  }
+
+  .textBlockHome2 {
+    width: 100%;
   }
 
   .text1 {
@@ -321,7 +332,7 @@
   }
 }
 
-@media only screen and (max-device-width: 668px) {
+@media only screen and (max-width: 668px) {
   body {
     align-items: flex-start;
   }
@@ -346,6 +357,11 @@
 
   .textBlock {
     width: 100%;
+  }
+
+  .textBlockHome2 {
+    padding: 92px 8px;
+    box-sizing: border-box;
   }
 
   .timerBlock {
